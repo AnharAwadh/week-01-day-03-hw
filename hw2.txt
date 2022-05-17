@@ -1,0 +1,144 @@
+-------------------Q1--------------
+
+/*public static int div(int num1,int num2) throws RuntimeException {
+
+
+    if (num2 == 0) {
+        throw new ArithmeticException("input is not valid");
+
+    }
+    return num1 / num2;
+
+
+}
+---------------------------------Q2------------------
+public class Price {
+    public static void main(String[] args) {
+        int price=600 ;
+
+            if (price>=100||price<=500)  {
+                throw new ArithmeticException("The range must be  between 100 - 500");}
+                else
+                System.out.println("tax is"+calculateTax(price));
+
+
+
+
+
+
+    }
+    public static int calculateTax(int price){
+        int tax =price*15/100;
+        return tax;
+    }
+    }
+
+-----------------------------
+public class Circle {
+
+
+    private int radius;
+     public Circle(){
+
+     }
+    public Circle(double radius){
+
+
+    }
+    public double getRaduis(){
+         return radius;
+    }
+    public void setRaduis(double radius){
+
+    }
+    public double getArea(){
+
+         return radius*radius*Math.PI;
+    }
+    public double getCircumfrence(){
+
+         return 2*radius*Math.PI;
+    }
+    public String toString(){
+         return "Circle"+radius;
+    }
+
+}
+---------------------------------------------------------
+
+-----------------Q4----------------
+public class Customer {
+
+    private int ID;
+    private String  name;
+    private char  gender='M';
+    public  Customer(int ID,String  name,int discount){
+        this.ID= ID;
+        this.name=name;
+    }
+    public int getID(){
+        return ID;
+    }
+    public String getName() {
+        return name;
+    }
+    public char getGender(){
+        return gender;
+    }
+    public String toString(){
+        return "Name "+name+" Id "+ID;
+    }
+}
+public class test {
+    public static void main(String[] args) {
+Customer customer=new Customer(5,"Anhar",3);
+    System.out.println(customer.getID());
+        System.out.println(customer.getName());
+        System.out.println(customer.toString());
+        System.out.println(customer.getGender());
+    }
+    }
+----------------------------------------------------
+		Q5
+
+*****************The PolyLine class***********
+         
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class polyLine {
+    private ArrayList<Point> points;
+    public polyLine(){
+
+    }
+    public polyLine(List<Point > points){
+       new ArrayList<Point>();
+    }
+    public void appendPoint(int x, int y){
+        points.add(new Point(x,y));
+
+    }
+    public void appendPoint(Point point){
+        points.add(point);
+    }
+    public String toString(){
+        return "Point  "+ points;
+    }
+    public double getLenth(){
+        return points.size();
+    }
+}
+******************** The point class*********
+ppublic class Point {
+
+   private int x;
+   private  int y;
+
+   public Point(int x,int y){
+       this.x=x;
+       this.y=y;
+   }
+}
+
+
